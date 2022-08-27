@@ -14,17 +14,6 @@ $naranjaOscuro: darkorange;
     text-shadow: 3px;
 }   
 
-.menu {
-    transition: all;
-}
-
-.menu:hover {
-    color: $hoverMenu;
-    background-color: $naranjaOscuro;
-    
-}
-
-
 .tituloAnimado {
     animation-name: titulo;
     animation-duration: 1s;
@@ -60,15 +49,6 @@ $naranjaOscuro: darkorange;
         color: $hoverMenu;
         text-shadow: 3px;
     }   
-    
-    .menu {
-        transition: all;
-    }
-    
-    .menu:hover {
-        color: $hoverMenu;
-        background-color: $naranjaOscuro;
-    }
 
     .tituloAnimado {
         animation-name: titulo;
@@ -105,16 +85,6 @@ $naranjaOscuro: darkorange;
     color: $hoverMenu;
     text-shadow: 3px;
 }  
-
-.menu {
-    transition: all;
-}
-
-.menu:hover {
-    color: $hoverMenu;
-    background-color: $naranjaOscuro;
-}
-
 .tituloAnimado {
     animation-name: titulo;
     animation-duration: 1s;
