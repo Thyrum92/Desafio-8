@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
 $alturaLetra: 22px;
 $colorUno: whitesmoke;
+
+$mapa1: (
+    Prox: $colorUno,
+    Rec: $colorUno,
+);
+
+$mapa2: (
+    TitArticle: $alturaLetra - 4px,
+    Parrafo: $alturaLetra - 6px
+);
+
+
+
 @media (min-width: 360px) and (max-width: 599px)
 {
 h1 {
@@ -20,21 +33,17 @@ h5 {
     font-size: $alturaLetra - 14px;
 }
 
-.fontProx {
-    color: $colorUno;
+@each $clase, $valor in $mapa1 {
+    .font#{$clase} {
+        color: $valor;
+    }
 }
 
-.fontRec {
-    color: $colorUno;
+@each $clase, $valor in $mapa2 {
+    .letra#{$clase} {
+        font-size: $valor;
+    }
 }
-
-.letraTitArticle {
-    font-size: $alturaLetra - 4px;
-}
-.letraParrafo {
-    font-size: $alturaLetra - 6px;
-}
-
 
 }
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -54,14 +63,17 @@ h5 {
         font-size: $alturaLetra - 12px;
     }
 
-    .fontProx {
-        color: $colorUno;
+    @each $clase, $valor in $mapa1 {
+        .font#{$clase} {
+            color: $valor;
+        }
     }
     
-    .fontRec {
-        color: $colorUno;
+    @each $clase, $valor in $mapa2 {
+        .letra#{$clase} {
+            font-size: $valor;
+        }
     }
-
 }
 @media (min-width: 1200px) {
 
@@ -71,12 +83,15 @@ h5 {
     h4 {
         font-size: $alturaLetra - 6px;
     }
-    .fontProx {
-        color: $colorUno;
+    @each $clase, $valor in $mapa1 {
+        .font#{$clase} {
+            color: $valor;
+        }
     }
     
-    .fontRec {
-        color: $colorUno;
+    @each $clase, $valor in $mapa2 {
+        .letra#{$clase} {
+            font-size: $valor;
+        }
     }
-
 }

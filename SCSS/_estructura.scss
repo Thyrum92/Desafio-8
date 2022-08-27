@@ -1,13 +1,28 @@
 /** Estructura **/
 $colorNav: yellowgreen;
+$naranja: darkorange;
+
+@mixin tamaño ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.borde {
+    border: solid 3px;
+    border-radius: 3px;
+}
+
+.bordeBoton {
+    @extend .borde;
+    background-color: $naranja;
+}
 @media (min-width: 360px) and (max-width: 599px) {
 
     /*** General - Header ***/
 
     .caja {
         margin: 0 15px 0 0;
-        width: 100%;
-        height: 100%;
+        @include tamaño (100%,100%)
     }
     
     .cajaSub {
@@ -19,10 +34,6 @@ $colorNav: yellowgreen;
         font-size: 12px;
     }
     
-    .borde {
-        border: solid 3px;
-        border-radius: 3px;
-    }
 
     /* Main - Index */
 
@@ -63,28 +74,20 @@ $colorNav: yellowgreen;
 
     /*** Contacto ***/
 
-    .marginNa {
+    .margin5 {
         margin: 5px 0 0 0px;
-       }
-       .marginE {
-           margin: 5px 0 0 0px;
        }
        .marginC {
            margin: -15px 0 0 0;
        }
-       .marginB {
-           margin: 5px 0 0 00px;
-       }
-}
-
+    }
 @media (min-width: 600px) and (max-width: 1199px) {
 
 /*** General - Header ***/
   
 .caja {
     margin: 0 15px 0 0;
-    width: 100%;
-    height: 100%;
+    @include tamaño(100%,100% )
 }
 
 .cajaSub {
@@ -94,11 +97,6 @@ $colorNav: yellowgreen;
 .sinPunto {
     list-style-type: none;
     font-size: 12px;
-}
-
-.borde {
-    border: solid 3px;
-    border-radius: 3px;
 }
 
 /* Main - Index */
@@ -140,17 +138,11 @@ $colorNav: yellowgreen;
 
 /*** Contacto ***/
 
-.marginNa {
+.margin5 {
     margin: 5px 0 0 0px;
-   }
-   .marginE {
-       margin: 5px 0 0 0px;
    }
    .marginC {
        margin: -15px 0 0 0;
-   }
-   .marginB {
-       margin: 5px 0 0 00px;
    }
 
 }
@@ -161,8 +153,7 @@ $colorNav: yellowgreen;
 
 .caja {
     margin: 0 15px 0 0;
-    width: 100%;
-    height: 100%;
+    @include tamaño(100%,100% );
     text-shadow: 2px 2px 2px black;
 }
 
@@ -172,11 +163,6 @@ $colorNav: yellowgreen;
 
 .sinPunto {
     list-style-type: none;
-}
-
-.borde {
-    border: solid 3px;
-    border-radius: 3px;
 }
 
 /* Main - Index */
@@ -217,17 +203,11 @@ $colorNav: yellowgreen;
 
 /*** Contacto ***/
 
-.marginNa {
+.margin5 {
     margin: 5px 0 0 0px;
-   }
-   .marginE {
-       margin: 5px 0 0 0px;
    }
    .marginC {
        margin: -15px 0 0 0;
-   }
-   .marginB {
-       margin: 5px 0 0 00px;
    }
 
 /*** Quienes Somos ***/

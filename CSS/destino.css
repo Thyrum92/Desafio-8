@@ -7,6 +7,15 @@
 }
 
 /** Estructura **/
+.borde, .bordeBoton {
+  border: solid 3px;
+  border-radius: 3px;
+}
+
+.bordeBoton {
+  background-color: darkorange;
+}
+
 @media (min-width: 360px) and (max-width: 599px) {
   /*** General - Header ***/
   .caja {
@@ -20,10 +29,6 @@
   .sinPunto {
     list-style-type: none;
     font-size: 12px;
-  }
-  .borde {
-    border: solid 3px;
-    border-radius: 3px;
   }
   /* Main - Index */
   .boxLi {
@@ -55,17 +60,11 @@
     margin: 0 0 0 5px;
   }
   /*** Contacto ***/
-  .marginNa {
-    margin: 5px 0 0 0px;
-  }
-  .marginE {
+  .margin5 {
     margin: 5px 0 0 0px;
   }
   .marginC {
     margin: -15px 0 0 0;
-  }
-  .marginB {
-    margin: 5px 0 0 0px;
   }
 }
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -81,10 +80,6 @@
   .sinPunto {
     list-style-type: none;
     font-size: 12px;
-  }
-  .borde {
-    border: solid 3px;
-    border-radius: 3px;
   }
   /* Main - Index */
   .boxLi {
@@ -115,17 +110,11 @@
     margin: 0 0 0 5px;
   }
   /*** Contacto ***/
-  .marginNa {
-    margin: 5px 0 0 0px;
-  }
-  .marginE {
+  .margin5 {
     margin: 5px 0 0 0px;
   }
   .marginC {
     margin: -15px 0 0 0;
-  }
-  .marginB {
-    margin: 5px 0 0 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -141,10 +130,6 @@
   }
   .sinPunto {
     list-style-type: none;
-  }
-  .borde {
-    border: solid 3px;
-    border-radius: 3px;
   }
   /* Main - Index */
   .boxLi {
@@ -174,17 +159,11 @@
     margin: 0 0 0 5px;
   }
   /*** Contacto ***/
-  .marginNa {
-    margin: 5px 0 0 0px;
-  }
-  .marginE {
+  .margin5 {
     margin: 5px 0 0 0px;
   }
   .marginC {
     margin: -15px 0 0 0;
-  }
-  .marginB {
-    margin: 5px 0 0 0px;
   }
   /*** Quienes Somos ***/
   .marginP1 {
@@ -201,18 +180,12 @@
     background-image: url("/Imagenes/sin_tacc_background.jpg");
     background-repeat: no-repeat;
     margin: 0px;
-    height: 60vh;
     width: 100%;
+    height: 60vh;
   }
   .imgDim {
     width: 75px;
     height: 75px;
-  }
-  /*** productos ***/
-  .imgProd {
-    width: 150px;
-    height: 150px;
-    border: solid black;
   }
   /*** Productos Sin Tacc ***/
   .imgProd {
@@ -243,23 +216,17 @@
     background-image: url("/Imagenes/sin_tacc_background.jpg");
     background-repeat: no-repeat;
     margin: 0px;
-    height: 60vh;
     width: 100%;
+    height: 60vh;
   }
   .imgDim {
     width: 75px;
     height: 75px;
   }
-  /*** productos ***/
-  .imgProd {
-    width: 250px;
-    height: 250px;
-    border: solid black;
-  }
   /*** Productos Sin Tacc ***/
   .imgProd {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border: solid black;
   }
   /*** Contacto ***/
@@ -285,18 +252,12 @@
     background-image: url("/Imagenes/sin_tacc_background.jpg");
     background-repeat: no-repeat;
     margin: 0px;
-    height: 60vh;
     width: 100%;
+    height: 60vh;
   }
   .imgDim {
     width: 75px;
     height: 75px;
-  }
-  /*** productos ***/
-  .imgProd {
-    width: 350px;
-    height: 350px;
-    border: solid black;
   }
   /*** Productos Sin Tacc ***/
   .imgProd {
@@ -321,12 +282,7 @@
   }
 }
 /** Colores **/
-h1, h2 {
-  color: red;
-  text-shadow: 3px 3px 3px black;
-}
-
-h3, h4 {
+h1, h2, h3, h4 {
   color: red;
   text-shadow: 3px 3px 3px black;
 }
@@ -392,6 +348,12 @@ h5 {
   .fontRec {
     color: whitesmoke;
   }
+  .letraTitArticle {
+    font-size: 18px;
+  }
+  .letraParrafo {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1200px) {
   h3 {
@@ -405,6 +367,12 @@ h5 {
   }
   .fontRec {
     color: whitesmoke;
+  }
+  .letraTitArticle {
+    font-size: 18px;
+  }
+  .letraParrafo {
+    font-size: 16px;
   }
 }
 /*** Grids ***/
@@ -835,6 +803,10 @@ h5 {
   }
 }
 /** Animaciones **/
+.bordeBoton:hover {
+  font-weight: bold;
+}
+
 @media (min-width: 360px) and (max-width: 599px) {
   /*** Productos Sin Tacc ***/
   .fontRec:hover {

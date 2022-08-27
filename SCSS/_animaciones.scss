@@ -1,6 +1,11 @@
 /** Animaciones **/
 $hoverMenu: blue;
 $naranjaOscuro: darkorange;
+
+.bordeBoton:hover {
+    font-weight: bold;
+}
+
 @media (min-width: 360px) and (max-width: 599px) {
     /*** Productos Sin Tacc ***/
 
@@ -18,6 +23,7 @@ $naranjaOscuro: darkorange;
     background-color: $naranjaOscuro;
     
 }
+
 
 .tituloAnimado {
     animation-name: titulo;

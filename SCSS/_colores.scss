@@ -1,14 +1,10 @@
 /** Colores **/
 $sombraLetra1: black;
-$naranjaOsuro: darkorange;
-h1, h2 {
+h1, h2, h3, h4 {
     color: red;
     text-shadow: 3px 3px 3px $sombraLetra1;
 }
-h3, h4 {
-    color: red;
-    text-shadow: 3px 3px 3px $sombraLetra1;
-}
+
 h5 {
     color: white;
     text-shadow: 2px 2px 2px $sombraLetra1;

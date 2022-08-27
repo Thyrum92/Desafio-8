@@ -2,6 +2,11 @@
 $bordeNegro: black;
 $anchoImagenProd: 75px;
 $LargoImagenProd: 75px;
+
+@mixin tamaño ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
 @media (min-width: 360px) and (max-width: 599px) {
 
 /*** Index ***/
@@ -10,27 +15,17 @@ $LargoImagenProd: 75px;
     background-image: url("/Imagenes/sin_tacc_background.jpg");
     background-repeat: no-repeat;
     margin: 0px;
-    height: 60vh;
-    width: 100%;
+    @include tamaño( 100%, 60vh )
 }
 .imgDim {
     width: $anchoImagenProd;
     height: $LargoImagenProd;
 }
 
-/*** productos ***/
-
-.imgProd {
-    width: $anchoImagenProd * 2;
-    height: $anchoImagenProd *2;
-    border: solid $bordeNegro;
-}
-
 /*** Productos Sin Tacc ***/
 
 .imgProd {
-    width: ($anchoImagenProd * 2) + 50px;
-    height: ($LargoImagenProd * 2) + 50px;
+    @include tamaño( ($anchoImagenProd * 2) + 50px, ($LargoImagenProd * 2) + 50px );
     border: solid $bordeNegro;
 }
 
@@ -63,8 +58,7 @@ $LargoImagenProd: 75px;
     background-image: url("/Imagenes/sin_tacc_background.jpg");
     background-repeat: no-repeat;
     margin: 0px;
-    height: 60vh;
-    width: 100%;
+    @include tamaño( 100%, 60vh )
 }
 
 .imgDim {
@@ -72,19 +66,10 @@ $LargoImagenProd: 75px;
     height: $LargoImagenProd;
 }
 
-/*** productos ***/
-
-.imgProd {
-    width: ($anchoImagenProd * 2) +100px;
-    height: ($LargoImagenProd * 2) +100px;
-    border: solid $bordeNegro;
-}
-
 /*** Productos Sin Tacc ***/
 
 .imgProd {
-    width: $anchoImagenProd * 4;
-    height: $LargoImagenProd * 4;
+    @include tamaño( ($anchoImagenProd * 2) + 50px, ($LargoImagenProd * 2) + 50px );
     border: solid $bordeNegro;
 }
 
@@ -117,29 +102,21 @@ $LargoImagenProd: 75px;
     background-image: url("/Imagenes/sin_tacc_background.jpg");
     background-repeat: no-repeat;
     margin: 0px;
-    height: 60vh;
-    width: 100%;
+    @include tamaño( 100% , 60vh )
 }
 
 .imgDim {
     width: $anchoImagenProd;
     height: $LargoImagenProd;
 }
-/*** productos ***/
-
-.imgProd {
-    width: ($anchoImagenProd * 4) + 50px;
-    height: ($LargoImagenProd *4) + 50px;
-    border: solid $bordeNegro;
-}
 
 /*** Productos Sin Tacc ***/
 
 .imgProd {
-    width: ($anchoImagenProd * 4);
-    height: ($LargoImagenProd *4);
+    @include tamaño( ($anchoImagenProd * 4), ($LargoImagenProd * 4) );
     border: solid $bordeNegro;
 }
+
 /*** Contacto ***/
 
 .imgCon {
